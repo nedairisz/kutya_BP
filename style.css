@@ -1,0 +1,111 @@
+*{color: #456280;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(kepek/v3.jpg);
+}
+main{
+    width: 70%;
+    margin: auto;
+    background-color: #cfc6b5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "h h"
+    "n n"
+    "as a"
+    "f f"
+    ;
+}
+header{
+    background-color: #506a85;
+    height: 6vh;
+    grid-area: h;
+}
+nav{
+    grid-area: n;
+}
+ul{
+    list-style: none;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+footer{
+    background-color: #506a85;
+    height: 6vh;
+    text-align: center;
+    grid-area: f;
+}
+footer p{
+    color: #f3efe9;
+    padding-top: 5px;
+}
+aside{
+    grid-area: as;
+    padding: 10px;
+}
+.kepek{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+img{
+    border: 3px solid #506a85;
+    width: 100%;
+}
+article{
+    grid-area: a;
+    padding: 10px;
+}
+article p{
+    text-align: center;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+}
+thead{
+    background-color: #506a85;
+    color: beige;
+    border: 1px solid #506a85;
+}
+thead tr{
+    border: 1px solid #506a85;
+}
+.table{
+    border: 1px solid #506a85;
+    border-collapse: collapse;
+    margin: auto;
+}
+tr:nth-child(even){
+    background-color: beige;
+}
+tr{
+    border: 1px solid #506a85;
+}
+td{
+    border: 1px solid #506a85;
+}
+@media screen and (max-width: 800px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "h"
+        "n"
+        "a"
+        "as"
+        "f"
+        ;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
